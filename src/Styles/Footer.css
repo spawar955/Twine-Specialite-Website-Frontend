@@ -1,6 +1,9 @@
-
+.ffooter{
+  margin-top: 2%;
+}
 footer{
-    background-color: var(--color-232f3e);
+  background-color: var(--color-232f3e);
+  font-size: 14px;
   }
   
   footer:nth-of-type(3) {

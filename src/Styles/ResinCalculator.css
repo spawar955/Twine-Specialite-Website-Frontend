@@ -1,0 +1,68 @@
+.cccontainer {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 25px;
+  background-color: #d2d1d1;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.cccontainer h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+  font-size: 22px;
+  margin: 10% 0%;
+}
+
+.cccontainer select,
+.cccontainer input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+}
+
+.cccontainer select:focus,
+.cccontainer input[type="number"]:focus {
+  border-color: #5cb85c;
+}
+
+.cccontainer label {
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: block;
+  font-size: 16px;
+  color: #555;
+}
+
+.cccontainer div {
+  margin-bottom: 20px;
+}
+
+.cccontainer button {
+  width: 100%;
+  padding: 12px;
+  background-color: #5cb85c;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cccontainer button:hover {
+  background-color: #4cae4c;
+}
+
+.cccontainer h3 {
+  text-align: center;
+  margin-top: 25px;
+  color: #333;
+  font-size: 18px;
+}

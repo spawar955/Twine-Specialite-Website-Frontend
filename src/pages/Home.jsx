@@ -13,8 +13,8 @@ function Home() {
               <div className="main-banner1 display-flex">
                 <div>
                   <img
-                      src="/images/img1.jpg"
-                      alt="main-banner"
+                    src="/images/img1.jpg"
+                    alt="main-banner"
                     className="img-fluid rounded-3"
                   />
                 </div>
@@ -90,150 +90,53 @@ function Home() {
         </div>
       </section>
 
-      <section className="home-wrapper-2 py-5">
-        <div className="container-xxl">
-          <div className="row">
-            <div className="col-12">
-              <div className="services d-flex align-items-center justify-content-between">
-                <div className="d-flex align-items-center gap-15">
-                  <img src="/images/service.png" alt="services" />
-                  <div>
-                    <h6>Free Shipping</h6>
-                    <p className="mb-0">From all orders over ₹500</p>
+      <section className="collection-wrapper py-5">
+      <div className="container-xxl">
+        <h3 className="section-heading">Our Collections</h3>
+          <a href="/ShopNow">
+        <div className="collection-items">
+          {[...Array(10)].map((_, index) => (
+            <div key={index} className="collection-item">
+              <img src="/images/bg.jpeg" />
+              <h6>Collection {index + 1}</h6>
+              <p>10 Items</p>
+              <div className="sub-products">
+                {[...Array(3)].map((_, subIndex) => (
+                  <div key={subIndex} className="sub-product">
+                    <img src="/images/bg.jpeg" alt={`Sub Product ${subIndex + 1}`} />
+                    <h6>Sub Product {subIndex + 1}</h6>
+                    <p>$10</p>
                   </div>
-                </div>
-                <div className="d-flex align-items-center gap-15">
-                  <img src="/images/service-02.png" alt="services" />
-                  <div>
-                    <h6>Daily Surprise offers</h6>
-                    <p className="mb-0">Save upto 25% off</p>
-                  </div>
-                </div>
-                <div className="d-flex align-items-center gap-15">
-                  <img src="/images/service-03.png" alt="services" />
-                  <div>
-                    <h6>Support 24/7</h6>
-                    <p className="mb-0">Shop with an expert</p>
-                  </div>
-                </div>
-                <div className="d-flex align-items-center gap-15">
-                  <img src="/images/service-04.png" alt="services" />
-                  <div>
-                    <h6>Affordable Prices</h6>
-                    <p className="mb-0">Get Factory Default Price</p>
-                  </div>
-                </div>
-                <div className="d-flex align-items-center gap-15">
-                  <img src="/images/service-05.png" alt="services" />
-                  <div>
-                    <h6>Secure Payments</h6>
-                    <p className="mb-0">100% Protected</p>
-                  </div>
-                </div>
+                ))}
               </div>
             </div>
-          </div>
+          ))}
         </div>
-      </section>
+          </a>
+      </div>
+    </section>
 
-      <section className="home-wrapper-2 py-5">
+    <section className="customer-reviews py-5">
         <div className="container-xxl">
           <div className="row">
             <div className="col-12">
-              <div className="categories d-flex justify-content-between align-items-center flex-wrap">
-                <div className="d-flex gap align-items-center"> 
-                  <div>
-                    <h6>Item name</h6>
-                    <p>10 Items</p>
+              <h3 className="section-heading">Customer Reviews</h3>
+              <div className="customer-reviews-container">
+                {[...Array(10)].map((_, index) => (
+                  <div key={index} className="customer-review">
+                    <div className="star-rating">
+                      <span role="img" aria-label="star">⭐️⭐️⭐️⭐️⭐️</span>
+                    </div>
+                    <p className="review-text">
+                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut libero eu metus sodales sagittis. Quisque accumsan orci non sapien vulputate dictum."
+                    </p>
+                    <p className="review-date">
+                      January 1, 2024
+                    </p>
                   </div>
-                  <img src="/images/camera.jpg" alt="camera" />
-                </div>
-                <div className="d-flex gap align-items-center"> 
-                  <div>
-                    <h6>Item name</h6>
-                    <p>10 Items</p>
-                  </div>
-                  <img src="/images/camera.jpg" alt="camera" />
-                </div>
-                <div className="d-flex gap align-items-center"> 
-                  <div>
-                    <h6>Item name</h6>
-                    <p>10 Items</p>
-                  </div>
-                  <img src="/images/camera.jpg" alt="camera" />
-                </div>
-                <div className="d-flex gap align-items-center"> 
-                  <div>
-                    <h6>Item name</h6>
-                    <p>10 Items</p>
-                  </div>
-                  <img src="/images/camera.jpg" alt="camera" />
-                </div>
-
-                <div className="d-flex gap align-items-center"> 
-                  <div>
-                    <h6>Item name</h6>
-                    <p>10 Items</p>
-                  </div>
-                  <img src="/images/camera.jpg" alt="camera" />
-                </div>
-                <div className="d-flex gap align-items-center"> 
-                  <div>
-                    <h6>Item name</h6>
-                    <p>10 Items</p>
-                  </div>
-                  <img src="/images/camera.jpg" alt="camera" />
-                </div>
-                <div className="d-flex gap align-items-center"> 
-                  <div>
-                    <h6>Item name</h6>
-                    <p>10 Items</p>
-                  </div>
-                  <img src="/images/camera.jpg" alt="camera" />
-                </div>
-                <div className="d-flex gap align-items-center"> 
-                  <div>
-                    <h6>Item name</h6>
-                    <p>10 Items</p>
-                  </div>
-                  <img src="/images/camera.jpg" alt="camera" />
-                </div>
+                ))}
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="blog-wrapper py-5 home-wrapper-2" >
-        <div className="container-xxl">
-          <div className="row">
-            <div className="col-12">
-              <h3 className="section-heading">Our Products</h3>
-            </div>
-            <Productcard
-                prod_name = "product1"
-                prod_stars = '1'
-                prod_price = '100.99'
-            />
-            <Productcard
-                prod_name = "nikki"
-                prod_stars = '5'
-                prod_price = '100'
-            />
-          </div>
-        </div>
-      </section>
-
-      <section className="blog-wrapper py-5 home-wrapper-2">
-        <div className="container-xxl">
-          <div className="row">
-          <div className="col-12">
-            <h3 className="section-heading">Our Latest Blogs</h3>
-          </div>
-            <BlogCard/>
-            <BlogCard/>
-            <BlogCard/>
-            <BlogCard/>
           </div>
         </div>
       </section>

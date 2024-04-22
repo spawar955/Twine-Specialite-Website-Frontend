@@ -1,0 +1,50 @@
+.card {
+    border: none;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  .card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .card-body {
+    text-align: center;
+  }
+  
+  .card-title {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .card-text {
+    font-size: 16px;
+  }
+  
+  .btn-danger {
+    width: 100%;
+  }
+  
+  /* Adjustments for My Cart page */
+  .container {
+    margin-top: 20px;
+    
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    padding: 8px 20px;
+    margin-top: 20px;
+    font-size: 16px;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+
+  .text-center button{
+    width: 30%;
+  }
